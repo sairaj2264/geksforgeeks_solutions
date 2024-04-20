@@ -47,3 +47,12 @@ class Solution:
             if arr[i]==X:
                 return i
         return -1
+
+
+
+Algorithm
+
+Take a loop to iterate over all the elements
+chack if the element is matching with the given number X
+return the i value as index
+or else if element not found, return 0
