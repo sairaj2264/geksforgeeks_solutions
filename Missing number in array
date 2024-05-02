@@ -1,0 +1,17 @@
+class Solution:
+    def missingNumber(self, array, n):
+        array.sort()
+        j = 1
+        for i in range(1, n):
+            if array[i - 1] == j:
+                j += 1
+            else:
+                return j
+        return j
+
+
+
+Algorithm:-
+Sort the array
+then match the respective index with the numbers on that index
+the one which doesnt match is the solution/missing number
